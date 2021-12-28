@@ -2,14 +2,14 @@ from bs4 import BeautifulSoup
 import requests
 
 #File = open("out.csv", "a")
-url = "https://www.amazon.co.uk/dp/B09BC711XN/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B09BC711XN&pd_rd_w=sPfGn&pf_rd_p=828203ef-618e-4303-a028-460d6b615038&pd_rd_wg=hF2Gh&pf_rd_r=6SKEBB7WM5ZRY0DXPAZ6&pd_rd_r=4118f6fc-2201-4902-a3de-dc45a023beb3&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE3OFNURFEzUTA4NDUmZW5jcnlwdGVkSWQ9QTA2NDg2MzFFRlVWUVQxOEQwSVAmZW5jcnlwdGVkQWRJZD1BMDgwNTE3NDJPUFlWVUlKUk1XUDkmd2lkZ2V0TmFtZT1zcF9kZXRhaWwmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
+url = "https://www.amazon.co.uk/Grano-Milano-Nespresso-Compatible-Flavoured/dp/B081RPS7Z5/ref=sr_1_2_sspa?keywords=decaf%2Bpods%2Bnespresso%2Bcompatible&qid=1640720887&s=grocery&sprefix=decaf%2Bpods%2Cgrocery%2C61&sr=1-2-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzSTBSVzREMlE1WkxWJmVuY3J5cHRlZElkPUEwMTI3OTUwS0Q4V0FUWVNZOFdFJmVuY3J5cHRlZEFkSWQ9QTA0NDI1NzAxVjk0WU9HQUFNSkJQJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1"
 HEADERS = ({'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
 						'Accept-Language': 'en-US, en;q=0.5'})
 
 webpage = requests.get(url, headers=HEADERS)
-soup = BeautifulSoup(webpage.content, features="lxml")
+soup = BeautifulSoup(webpage.content, features="html.parser")
 
-print(soup)
+#print(soup)
 
 ##############
 #retrieve title
