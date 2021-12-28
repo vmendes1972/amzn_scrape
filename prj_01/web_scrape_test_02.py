@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 #File = open("out.csv", "a")
-url = "https://www.amazon.co.uk/dp/B07M9ZLDZ6"
+url = "https://www.amazon.co.uk/dp/B09BC711XN/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B09BC711XN&pd_rd_w=sPfGn&pf_rd_p=828203ef-618e-4303-a028-460d6b615038&pd_rd_wg=hF2Gh&pf_rd_r=6SKEBB7WM5ZRY0DXPAZ6&pd_rd_r=4118f6fc-2201-4902-a3de-dc45a023beb3&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE3OFNURFEzUTA4NDUmZW5jcnlwdGVkSWQ9QTA2NDg2MzFFRlVWUVQxOEQwSVAmZW5jcnlwdGVkQWRJZD1BMDgwNTE3NDJPUFlWVUlKUk1XUDkmd2lkZ2V0TmFtZT1zcF9kZXRhaWwmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
 HEADERS = ({'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
 						'Accept-Language': 'en-US, en;q=0.5'})
 
